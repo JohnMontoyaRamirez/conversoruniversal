@@ -173,6 +173,8 @@ def conversiones_temperatura():
     valor = st.number_input("Ingresa el valor a convertir:")
     boton_convertir = st.button("Convertir")
 
+    resultado = None
+
     if boton_convertir:
         if "Celsius a Fahrenheit" in conversion_seleccionada:
             resultado = convertir_temperatura(valor, "Celsius", "Fahrenheit")
